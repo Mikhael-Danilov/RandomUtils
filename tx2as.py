@@ -5,14 +5,14 @@ import string
 import pprint
 from xml.etree import ElementTree
 
-dstDir = "/cygdrive/e/Nyrds/Remixed Pixel Dungeon/PixelDungeon/src/main/res/"
+dstDir = "/media/mike/BigData/Nyrds/Remixed Pixel Dungeon/PixelDungeon/src/main/res/"
 
 xml_ext = '.xml'
 translations_dir = 'translations/'
 
-locale_remap = {'de_DE':'de', 'es_ES':'es', 'fr_FR':'fr', 'pl_PL':'pl', 'nl_NL':'nl', 'ro_RO':'ro', 'ru_RU':'ru','uk_UA':'uk','pt_BR':'pt-rBR','pt_PT':'pt-rPT','es_MX':'es-rMX'}
+locale_remap = {'de_DE':'de', 'es_ES':'es', 'fr_FR':'fr', 'pl_PL':'pl', 'nl_NL':'nl', 'ro_RO':'ro', 'ru_RU':'ru','uk_UA':'uk','pt_BR':'pt-rBR','pt_PT':'pt-rPT','es_MX':'es-rMX',"ms_MY":"ms"}
 
-used_locales = {'de','es','fr','it','ja','pl','pt-rBr','ru','tr','uk','zh'}
+used_locales = {'de','es','fr','it','ja','pl','pt-rBR','ru','tr','uk','zh','ko',"ms"}
 
 counters = {}
 totalCounter = {}
