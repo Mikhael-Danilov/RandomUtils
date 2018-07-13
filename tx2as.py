@@ -30,8 +30,8 @@ class CommentedTreeBuilder ( ElementTree.XMLTreeBuilder ):
 for _, dirs, _ in os.walk(translations_dir):
     for dir_name in dirs:
       resource_name = string.split(dir_name,'.')[1][:-3]+xml_ext
-      print "Processing:", resource_name
-      
+      print("Processing:", resource_name)
+
       counters[resource_name] = {}
       
       for _, _, files in os.walk(translations_dir+dir_name):
@@ -69,6 +69,6 @@ for _, dirs, _ in os.walk(translations_dir):
                ElementTree.ElementTree(transifexData).write(resource_dir+"/"+resource_name,"utf-8",xml_declaration=True)
                
             except ElementTree.ParseError:
-               print "shit happens with " + currentFilePath
-            
+               print("shit happens with " + currentFilePath)
+
 pprint.pprint(totalCounter)
